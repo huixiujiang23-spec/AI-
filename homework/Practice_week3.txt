@@ -1,0 +1,36 @@
+题目：游乐园门票计价器
+要求：
+1. 定义一个变量 `age`，并将其赋值为 25（你可以稍后手动修改这个值来测试不同的情况）。
+2. 编写一个 `if-elif-else` 结构，根据 `age` 的值决定门票价格并打印出来：
+   - 如果年龄小于 4 岁，打印 "Your admission cost is $0."
+   - 如果年龄大于等于 4 岁且小于 18 岁，打印 "Your admission cost is $25."
+   - 如果年龄大于等于 18 岁，打印 "Your admission cost is $40."
+3. 定义一个列表 `requested_toppings = ['mushrooms', 'extra cheese', 'pepperoni']`，以及一个空列表 `available_toppings = ['mushrooms', 'extra cheese']`。
+4. 使用 `for` 循环遍历 `requested_toppings`。在循环中，使用 `if...in...` 判断顾客点的配料是否在 `available_toppings` 中：
+   - 如果在，打印 "Adding [配料名]."
+   - 如果不在，打印 "Sorry, we don't have [配料名]."
+
+
+题目：宠物信息管理系统
+要求：
+1. 创建一个表示宠物的字典 `pet`，包含以下三个键值对：
+   - 'type': 'dog'
+   - 'name': '旺财'
+   - 'age': 3
+2. 使用 `print()` 打印出这只宠物的名字。
+3. 宠物过生日了，请通过字典操作将 `age` 的值修改为 4。
+4. 给这只宠物增加一个新的键值对 'color': 'brown'，然后打印整个字典。
+5. （挑战）使用 `get()` 方法尝试获取一个不存在的键 'owner'，并设置默认返回值为 'Unknown'。将结果打印出来。
+6. （进阶嵌套）创建一个包含两只宠物的列表 `pets`，列表中的每个元素都是一个字典（第一个是刚才修改好的 `pet`，第二个请自己新建一只猫的信息，包含 'type', 'name', 'age'）。使用 `for` 循环遍历 `pets` 列表，打印出每只宠物的类型和名字。
+
+
+题目：互动点餐与验证程序
+要求：
+1. 使用 `while` 循环和 `input()` 函数，让用户不断输入想要点的披萨配料，直到用户输入 'quit' 时退出循环。
+   - 提示语为："Please enter a pizza topping (enter 'quit' to finish): "
+   - 如果用户输入的不是 'quit'，就打印 "We will add [配料名] to your pizza."
+2. 模拟用户验证过程：定义一个列表 `unconfirmed_users = ['alice', 'brian', 'candace']`，以及一个空列表 `confirmed_users = []`。
+3. 使用 `while` 循环，只要 `unconfirmed_users` 列表中还有元素，就使用 `pop()` 方法从末尾取出一个用户。
+   - 打印 "Verifying user: [用户名]"
+   - 然后将该用户名使用 `append()` 添加到 `confirmed_users` 列表中。
+4. 循环结束后，使用 `for` 循环打印出 `confirmed_users` 列表中的所有用户，表明他们已被验证。
