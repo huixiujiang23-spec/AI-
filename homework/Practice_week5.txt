@@ -1,0 +1,25 @@
+【Python 第9章 基础编程练习：面向对象与类】
+
+ 作业一：定义一个简单的类（基础属性与方法）
+要求：
+1. 创建一个名为 `Restaurant`（餐馆）的类。
+2. 使用 `__init__` 方法初始化两个属性：`restaurant_name`（餐馆名称）和 `cuisine_type`（菜系类型）。
+3. 定义两个方法：
+   - `describe_restaurant()`：打印出餐馆的名称和菜系类型。
+   - `open_restaurant()`：打印一句提示，例如 "The restaurant is now open!"。
+4. 根据这个类创建一个名为 `my_restaurant` 的实例，传入你喜欢的餐馆名称和类型。分别调用 `describe_restaurant()` 和 `open_restaurant()` 方法查看结果。
+
+作业二：修改属性的值（默认值与直接修改）
+要求：
+1. 在刚才的 `Restaurant` 类的基础上进行修改：增加一个新的属性 `number_served`（就餐人数），并在 `__init__` 方法中将其默认值设为 0。
+2. 添加两个新方法：
+   - `set_number_served(new_number)`：接收一个数字，修改 `number_served` 的值。
+   - `increment_number_served(increment)`：接收一个数字，将 `number_served` 增加相应的值（提示：可以使用自赋值运算 `+=`）。
+3. 创建一个实例，先打印出初始的就餐人数；然后通过 `set_number_served(10)` 设置人数并打印；最后通过 `increment_number_served(5)` 增加人数并打印。
+
+作业三：类的继承与子类扩展
+要求：
+1. 创建一个名为 `IceCreamStand` 的类，让它继承自你之前编写的 `Restaurant` 类。
+2. 在 `IceCreamStand` 的 `__init__` 方法中，先使用 `super().__init__(restaurant_name, cuisine_type)` 调用父类的初始化方法，然后再添加一个属于子类的特有属性 `flavors`，并将其初始化为一个空列表 `[]`。
+3. 在子类中定义一个方法 `show_flavors()`，使用 `for` 循环遍历 `flavors` 列表，分行打印出所有冰淇淋口味（例如 "- Vanilla"）。
+4. 创建一个 `IceCreamStand` 实例，向 `flavors` 列表中添加至少三种你喜欢吃的冰淇淋口味（如 'Vanilla', 'Chocolate', 'Strawberry'），然后调用 `show_flavors()` 方法展示。最后调用一次父类的 `describe_restaurant()` 方法，证明子类继承了父类的能力。
